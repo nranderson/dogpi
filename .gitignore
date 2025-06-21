@@ -192,3 +192,72 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# AirTag Detector Project Specific
+# Configuration files with sensitive data
+config.py
+homekit_config.py
+homekit_pairing_data.json
+*.pem
+*.key
+*.cert
+
+# Local installation files
+install_log.txt
+setup_log.txt
+
+# Build environment
+build_env/
+venv_*/
+
+# Local service files and logs
+*.service.local
+/var/log/airtag-detector/
+systemd_logs/
+
+# HomeKit pairing and device data
+homekit_devices.json
+device_pairings/
+*.homekit
+
+# Bluetooth scan cache and device data
+bluetooth_cache/
+device_scan_*.json
+
+# API keys and tokens
+api_keys.txt
+tokens.json
+.env.local
+.env.production
+
+# Test data and mock devices
+test_devices.json
+mock_airtags.json
+
+# Local development artifacts
+debug_output.txt
+scan_results.log
+detection_log.txt
+
+# Package publishing credentials
+.twinerc
+twine.ini
+
+# Version control for package releases
+_version.py.bak
+version_backup/
+
+# Temporary installation scripts
+install_temp/
+quick_setup_*/
+
+# Old/legacy files that have been moved to package
+airtag_detector.py.bak
+config.py.old
+setup_homekit.py.bak
+*.service.old
+
+# Documentation backups
+README_*.bak
+QUICKSTART_*.bak
+*.md.backup
